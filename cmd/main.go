@@ -36,7 +36,7 @@ func main() {
 		Active:     true,
 	}
 
-	card.AddBonus(bonus, 5, 30, 365)
+	card.AddBonus(bonus, 3, 30, 365)
 
 	fmt.Println("Доход:", bonus.MinBalance)
 }
