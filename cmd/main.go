@@ -22,4 +22,26 @@ func main() {
 	card.Deposit(crd, 5000)
 
 	fmt.Println("Новый баланс:", crd.Balance)
+
+	//задание 7.2 Процент на остаток
+	bonus := &types.Card{
+		Id:         0002,
+		PAN:        "5058 XXXX XXXX 9999",
+		Balance:    100,
+		MinBalance: 3000,
+		Currency:   types.TJS,
+		Color:      "Black",
+		Name:       "MyCard",
+		Active:     true,
+	}
+
+	card.AddBonus(bonus, 3, 30, 365)
+
+	if MinBalance > 0 {
+		MinBalance := MinBalance * 3 % *30 * 365
+
+		return MinBalance
+	}
+
+	fmt.Println("Доход:", MinBalance)
 }

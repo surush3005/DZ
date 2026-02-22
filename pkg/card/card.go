@@ -38,4 +38,5 @@ func AddBonus (card *types.Card, percent int, daysInMonth int, daysInYear int){
 	if percent > 5_000{
 		return
 	}
+
 }
