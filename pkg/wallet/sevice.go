@@ -5,5 +5,8 @@ import (
 )
 
 type Service struct {
-	cards []*types.Card
+	cards 		[]*types.Card
+	payments	[]*types.Payment
 }
+
+
