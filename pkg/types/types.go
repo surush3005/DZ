@@ -17,10 +17,10 @@ type Card struct {
 	Id         int
 	PAN        PAN
 	Balance    Money
-	MinBalance Money
 	Currency   Currency
 	Color      string
 	Name       string
+	MinBalance Money
 	Active     bool
 }
 

@@ -4,7 +4,7 @@ import (
 	"github.com/surush3005/DZ/pkg/types"
 )
 
-//задание 7.1 Зачисление средств
+// задание 7.1 Зачисление средств
 func Deposit(card *types.Card, amount types.Money) {
 	if card == nil {
 		return
@@ -25,8 +25,8 @@ func Deposit(card *types.Card, amount types.Money) {
 	card.Balance += amount
 }
 
-//задание 7.2 Процент на остаток
-func AddBonus (card *types.Card, percent int, daysInMonth int, daysInYear int){
+// задание 7.2 Процент на остаток
+func AddBonus(card *types.Card, percent int, daysInMonth int, daysInYear int) {
 	if !card.Active {
 		return
 	}
@@ -35,8 +35,14 @@ func AddBonus (card *types.Card, percent int, daysInMonth int, daysInYear int){
 		return
 	}
 
-	if percent > 5_000{
+	if percent > 5_000 {
 		return
+	}
+
+	if MinBalance > 0 {
+		MinBalance := MinBalance * 3 % *30 * 365
+
+		return MinBalance
 	}
 
 }

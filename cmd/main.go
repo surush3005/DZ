@@ -37,11 +37,5 @@ func main() {
 
 	card.AddBonus(bonus, 3, 30, 365)
 
-	if MinBalance > 0 {
-		MinBalance := MinBalance * 3 % *30 * 365
-
-		return MinBalance
-	}
-
 	fmt.Println("Доход:", MinBalance)
 }
