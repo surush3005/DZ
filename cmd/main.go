@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-
+	//задание 7.1 Зачисление средств
 	crd := &types.Card{
 		Id:       0001,
 		PAN:      "5058 XXXX XXXX 9999",
