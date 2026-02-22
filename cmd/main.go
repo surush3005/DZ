@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/surush3005/DZ.git/pkg/card"
+	"github.com/surush3005/DZ/pkg/card"
 	"github.com/surush3005/DZ/pkg/types"
 )
 
@@ -27,6 +27,7 @@ func main() {
 	bonus := &types.Card{
 		Id:         0002,
 		PAN:        "5058 XXXX XXXX 9999",
+		Balance: 	100,
 		MinBalance: 3000,
 		Currency:   types.TJS,
 		Color:      "Black",
@@ -36,5 +37,5 @@ func main() {
 
 	card.AddBonus(bonus, 3, 30, 365)
 
-	fmt.Println("Доход:", MinBalance)
+	fmt.Println("Доход:", bonus.MinBalance)
 }

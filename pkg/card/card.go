@@ -39,6 +39,6 @@ func AddBonus(card *types.Card, percent int, daysInMonth int, daysInYear int) {
 		return
 	}
 
-	bonus := card. * percent * daysInMonth / daysInYear
-	card.MinBalance += bonus
+	bonus := int(card.MinBalance) * percent * daysInMonth / daysInYear
+	card.MinBalance += types.Money(bonus)
 }
