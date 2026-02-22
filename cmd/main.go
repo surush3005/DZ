@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/surush3005/DZ.git/pkg/types"
 	"github.com/surush3005/DZ.git/pkg/card"
+	"github.com/surush3005/DZ/pkg/types"
 )
 
 func main() {
 
-	cards := &types.Card{
+	crd := &types.Card{
 		Id:       0001,
 		PAN:      "5058 XXXX XXXX 9999",
 		Balance:  -100,
@@ -19,7 +19,7 @@ func main() {
 		Active:   true,
 	}
 
-	card.Deposit(card,5000)
+	card.Deposit(crd, 5000)
 
-	fmt.Println("Новый баланс:", cards.Balance)
+	fmt.Println("Новый баланс:", crd.Balance)
 }
