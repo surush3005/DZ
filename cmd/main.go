@@ -27,7 +27,6 @@ func main() {
 	bonus := &types.Card{
 		Id:         0002,
 		PAN:        "5058 XXXX XXXX 9999",
-		Balance:    100,
 		MinBalance: 3000,
 		Currency:   types.TJS,
 		Color:      "Black",

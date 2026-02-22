@@ -1,4 +1,4 @@
-module github.com/surush3005/DZ.git
+module github.com/surush3005/DZ
 
 go 1.25.5
 
