@@ -24,11 +24,12 @@ func Deposit(card *types.Card, amount types.Money) {
 	card.Balance += amount
 }
 
+/*
 type Service struct {
 	cards    []*types.Card
 	payments []*types.Payment
 }
-
+/*
 func Issue(currency types.Currency, color string, name string) types.Card {
 	return types.Card{
 		Id:       1000,
@@ -49,5 +50,6 @@ func Issue(currency types.Currency, color string, name string) types.Card {
 			Name:     name,
 			Active:   false,
 		}
-	*/
+
 }
+*/
